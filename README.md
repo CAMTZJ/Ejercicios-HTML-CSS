@@ -2,4 +2,6 @@
 
 ### Notas: Aqui estaran los links de los ejercicios
 
-Ecommerce: camtzj-practica-ecommerce.netlify.app
+Ecommerce: https://camtzj-practica-ecommerce.netlify.app
+
+TechPro: https://camtzj-techpro.netlify.app
