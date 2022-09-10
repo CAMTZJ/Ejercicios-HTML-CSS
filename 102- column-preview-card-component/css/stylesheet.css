@@ -1,0 +1,162 @@
+:root {
+  /* Primarios */
+
+  --brightOrange: hsl(31, 77%, 52%);
+  --darkCyan: hsl(184, 100%, 22%);
+  --veryDarkCyan: hsl(179, 100%, 13%);
+
+  /* Neutral */
+  --white: hsla(0, 0%, 100%, 0.75); /* paragraphs */
+  --veryLightGray: hsl(0, 0%, 95%); /* background, headings, buttons  */
+
+  /*  Fuentes   */
+  --fontLexendDeca: "Lexend Deca", sans-serif; /* 400 */
+  --fontBigShoulders: "Big Shoulders Display", cursive; /* 700 */
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5% /* 1rem = 10px */;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+body {
+  font-size: 1.5rem;
+  background-color: var(--veryLightGray);
+  display: flex;
+ flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+@media (min-width: 1024px) {
+    body{
+      height: 100vh;
+    }
+ }
+a{
+    text-decoration: none;
+  }
+
+.main {
+    
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  width: 33rem;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  color: var(--veryLightGray);
+  margin: 8rem 0 0 0;
+
+}
+
+@media (min-width: 992px) {
+    .main {
+        grid-template-rows: unset;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100rem;
+          
+    }
+ }
+.main section {
+    padding: 3.5rem 5rem 6.5rem 5rem;
+}
+
+@media (min-width: 992px) {
+  .main section {
+
+    padding: 5.5rem 3.5rem 6.5rem 5rem;
+  }
+ }
+
+.sedans {
+  background-color: var(--brightOrange);
+}
+.suvs {
+  background-color: var(--darkCyan);
+}
+
+.luxury {
+  background-color: var(--veryDarkCyan);
+}
+.titulo{
+    font-family: var(--fontBigShoulders);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 4rem;
+    letter-spacing: 0.8;
+    padding-top: 3rem;
+}
+
+.texto-decripcion{
+line-height: 1.8;
+font-family: var(--fontLexendDeca);
+font-weight: 400;
+color: var(--white);
+opacity: 0.9;
+margin: 2rem 0 5rem 0;
+}
+
+@media (min-width: 1024px) {
+  .texto-decripcion{
+    padding: 0 1.5rem 0 0;
+    margin: 3.2rem 2.15rem 10rem 0;
+    }
+ }
+
+
+.btn {
+    
+    background-color: var(--veryLightGray);
+    border: 0;
+    font-family: var(--fontLexendDeca);
+    font-weight: 400;
+    border-radius: 3rem;
+    padding: 1.5rem 3.5rem;
+   
+    text-align: center;
+ 
+}
+a:hover, section .btn:hover{
+    box-shadow: inset 0 0 0 2px var(--white);
+   background-color: transparent;
+   color:var(--white)
+
+}
+
+
+
+
+.sedans .btn {
+    color:var(--brightOrange)
+}
+
+.suvs .btn {
+    color:var(--darkCyan)
+}
+.luxury .btn {
+    color:var(--veryDarkCyan)
+}
+
+.attribution {
+  padding: 2rem 0;
+  
+}
