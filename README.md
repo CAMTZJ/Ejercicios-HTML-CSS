@@ -14,4 +14,6 @@ Product-preview-card-component: https://camtzj.github.io/product-preview-card-co
 
 Stats preview card component: https://camtzj-stats-preview-card-component.netlify.app
 
-Column-preview-card-component https://camtzj-column-preview-card-component.netlify.app
+Column-preview-card-component: https://camtzj-column-preview-card-component.netlify.app
+
+Order-summary-component: https://camtzj-order-summary-component.netlify.app
