@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Order summary card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/stylesheet.css">
+</head>
+
+<body>
+
+  <main class="card">
+    <header class="card__imagen">
+      <img src="./images/illustration-hero.svg" alt=" img header">
+    </header> <!-- card__imagen-->
+
+    <section class="contenido">
+      <h1 class="contenido__titulo">Order Summary</h1>
+      <p class="contenido__descripcion">
+        You can now listen to millions of songs, audiobooks, and podcasts on any
+        device anywhere you like!
+      </p>
+
+
+      <div class="contenido__plan">
+        <div class="contenedor-icono-planes">
+          <div class="icon-music">
+            <img src="./images/icon-music.svg" alt="img music">
+          </div>
+
+          <div class="contenedor-tipo-plan">
+            <span id="plan-tipo">Annual Plan</span>
+            <span id="plan-precio">$59.99/year</span>
+          </div>
+        </div>
+        <div class="cambiar-plan">
+          <a href="#">Change</a>
+        </div>
+
+        <!-- .contenido__plan-->
+      </div>
+
+
+      <div class="botones">
+        <a id="btn-pagar" href="#">Proceed to Payment</a>
+        <a id="btn-cancelar-order" href="#">Cancel Order</a>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/CAMTZJ">Carlos</a>
+  </footer>
+</body>
+
+</html>
